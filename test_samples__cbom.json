@@ -1,0 +1,1429 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.4",
+  "serialNumber": "urn:uuid:7272eac9-b693-43d4-873f-53d73ac10225",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2025-07-28T18:10:08.343501+00:00",
+    "tools": [
+      {
+        "vendor": "Quantum Crypto Scanner",
+        "name": "quantum-crypto-scanner",
+        "version": "0.2.0",
+        "hashes": [
+          {
+            "alg": "SHA-256",
+            "content": "5f7d35652f7aa9d80888754b85be3f9143f942bc43c8ca9146199b9fe350d836"
+          }
+        ]
+      }
+    ],
+    "authors": [
+      {
+        "name": "Quantum Crypto Scanner",
+        "email": "contact@quantum-crypto-scanner.org"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "bom-ref": "unknown-project",
+      "name": "unknown-project",
+      "version": "1.0.0",
+      "description": "Cryptographic inventory for unknown-project"
+    },
+    "properties": [
+      {
+        "name": "quantum-crypto-scanner:scan-method",
+        "value": "enhanced_multi_engine"
+      },
+      {
+        "name": "quantum-crypto-scanner:files-scanned",
+        "value": "2"
+      }
+    ]
+  },
+  "components": [
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-463958b4-fd17-4271-a22d-d9b4de8dbd0e",
+      "name": "RSA-java.security.KeyPairGenerator",
+      "version": "unknown",
+      "description": "RSA cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "RSA"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "java.security.KeyPairGenerator"
+        },
+        {
+          "name": "crypto:language",
+          "value": "java"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "1.0"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-ecd73962-854c-484d-b7ad-439613ced400",
+      "name": "RSA-KeyPairGenerator.getInstance(\"RSA\")",
+      "version": "unknown",
+      "description": "RSA cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "RSA"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "KeyPairGenerator.getInstance(\"RSA\")"
+        },
+        {
+          "name": "crypto:language",
+          "value": "java"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-762c3a80-cdad-4f9c-afe0-a49e1ff55495",
+      "name": "ECC-KeyPairGenerator.getInstance(\"EC\")",
+      "version": "unknown",
+      "description": "ECC cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "ECC"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "KeyPairGenerator.getInstance(\"EC\")"
+        },
+        {
+          "name": "crypto:language",
+          "value": "java"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-56200fb2-86fc-4bfb-afa6-4002535cf98b",
+      "name": "ECC-Signature.getInstance(\"SHA256withECDSA\")",
+      "version": "unknown",
+      "description": "ECC cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "ECC"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "Signature.getInstance(\"SHA256withECDSA\")"
+        },
+        {
+          "name": "crypto:language",
+          "value": "java"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-b65f4483-36ad-4971-b5fe-ff7e23f111f2",
+      "name": "HASH-MessageDigest.getInstance(\"SHA-1\")",
+      "version": "unknown",
+      "description": "HASH cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "HASH"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "MessageDigest.getInstance(\"SHA-1\")"
+        },
+        {
+          "name": "crypto:language",
+          "value": "java"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.8"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "HIGH"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "False"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "LOW"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "Post-2050"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "None known"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-efcde147-b635-4f6a-9e63-361e0b2482e7",
+      "name": "HASH-MessageDigest.getInstance(\"MD5\")",
+      "version": "unknown",
+      "description": "HASH cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "HASH"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "MessageDigest.getInstance(\"MD5\")"
+        },
+        {
+          "name": "crypto:language",
+          "value": "java"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.8"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "HIGH"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "MEDIUM"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2035-2040"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Grover's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-ad3eabfb-1f3f-43d9-a54a-776ccaf3679b",
+      "name": "AES-KeyGenerator.getInstance(\"AES\")",
+      "version": "unknown",
+      "description": "AES cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "AES"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "KeyGenerator.getInstance(\"AES\")"
+        },
+        {
+          "name": "crypto:language",
+          "value": "java"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.8"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "MEDIUM"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "False"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "LOW"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "Post-2050"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "None known"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-b7373138-8f0f-4ef1-a4ca-eb23d50630b4",
+      "name": "HASH-hashlib",
+      "version": "unknown",
+      "description": "HASH cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "HASH"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "hashlib"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "HIGH"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "False"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "LOW"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "Post-2050"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "None known"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-87e54046-d72e-4665-8321-5d505dc824c4",
+      "name": "RSA-RSA.generate",
+      "version": "unknown",
+      "description": "RSA cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "RSA"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "RSA.generate"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-9ee4b07b-e57e-43b5-b50a-61cd48118ce1",
+      "name": "ECC-ec.generate_private_key",
+      "version": "unknown",
+      "description": "ECC cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "ECC"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "ec.generate_private_key"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.9"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-7f1124b8-27b7-46c5-a558-96c655927af0",
+      "name": "HASH-hashlib.sha1",
+      "version": "unknown",
+      "description": "HASH cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "HASH"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "hashlib.sha1"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.8"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "HIGH"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "MEDIUM"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2035-2040"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Grover's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-f1f8c113-8aca-4572-86e3-0e50f0227478",
+      "name": "HASH-hashlib.md5",
+      "version": "unknown",
+      "description": "HASH cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "HASH"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "hashlib.md5"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.8"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "HIGH"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "MEDIUM"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2035-2040"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Grover's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-9372ba82-3f6d-4449-a67d-0de469dfb86e",
+      "name": "AES-AES.new",
+      "version": "unknown",
+      "description": "AES cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "AES"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "AES.new"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.8"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "MEDIUM"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "False"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "LOW"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "Post-2050"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "None known"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-8026ef22-2d5b-4dd6-b6d9-59d0a4bfbeff",
+      "name": "RSA-PKCS1_OAEP",
+      "version": "unknown",
+      "description": "RSA cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "RSA"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "PKCS1_OAEP"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.7"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-f32bd172-2024-46f8-9eb0-57cb1a335cca",
+      "name": "ECC-SECP256R1",
+      "version": "unknown",
+      "description": "ECC cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "ECC"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "SECP256R1"
+        },
+        {
+          "name": "crypto:language",
+          "value": "python"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.7"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    },
+    {
+      "type": "cryptographic-asset",
+      "bom-ref": "crypto-5c6f6118-a6cc-4d7b-b9cf-407c5e54c4ab",
+      "name": "ECC-ECDSA",
+      "version": "unknown",
+      "description": "ECC cryptographic usage",
+      "scope": "required",
+      "hashes": [],
+      "licenses": [],
+      "properties": [
+        {
+          "name": "crypto:algorithm-type",
+          "value": "ECC"
+        },
+        {
+          "name": "crypto:pattern",
+          "value": "ECDSA"
+        },
+        {
+          "name": "crypto:language",
+          "value": "unknown"
+        },
+        {
+          "name": "crypto:confidence",
+          "value": "0.6"
+        },
+        {
+          "name": "crypto:severity",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:vulnerable",
+          "value": "True"
+        },
+        {
+          "name": "quantum:risk-level",
+          "value": "CRITICAL"
+        },
+        {
+          "name": "quantum:break-timeline",
+          "value": "2030-2035"
+        },
+        {
+          "name": "quantum:attack-method",
+          "value": "Shor's Algorithm"
+        }
+      ]
+    }
+  ],
+  "services": [],
+  "dependencies": [
+    {
+      "ref": "file-20f286a4",
+      "dependsOn": [
+        "crypto-component-da6018e707fb",
+        "crypto-component-0de94275636a",
+        "crypto-component-a6b307876c86",
+        "crypto-component-cef562d0522f",
+        "crypto-component-fc88383770e5",
+        "crypto-component-4a134daf5b47",
+        "crypto-component-8c08f1bfaac1",
+        "crypto-component-20530a5c9b8f",
+        "crypto-component-20530a5c9b8f"
+      ]
+    },
+    {
+      "ref": "file-27c7b7fe",
+      "dependsOn": [
+        "crypto-component-802cb5a36d1b",
+        "crypto-component-f9cb7089543b",
+        "crypto-component-fcb1e6563de3",
+        "crypto-component-0b0cb7b51e90",
+        "crypto-component-3330e537f075",
+        "crypto-component-288c1477ee64",
+        "crypto-component-68f8e413cf40",
+        "crypto-component-68f8e413cf40",
+        "crypto-component-e06603f01ff5",
+        "crypto-component-20530a5c9b8f"
+      ]
+    }
+  ],
+  "compositions": [
+    {
+      "aggregate": "complete",
+      "assemblies": [
+        {
+          "bom-ref": "cryptographic-inventory",
+          "dependencies": [
+            "crypto-0",
+            "crypto-1",
+            "crypto-2",
+            "crypto-3",
+            "crypto-4",
+            "crypto-5",
+            "crypto-6",
+            "crypto-7",
+            "crypto-8",
+            "crypto-9",
+            "crypto-10",
+            "crypto-11",
+            "crypto-12",
+            "crypto-13",
+            "crypto-14",
+            "crypto-15",
+            "crypto-16",
+            "crypto-17",
+            "crypto-18"
+          ]
+        }
+      ]
+    }
+  ],
+  "vulnerabilities": [
+    {
+      "bom-ref": "quantum-vuln-1",
+      "id": "QUANTUM-RSA-1",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found RSA usage at test_samples/vulnerable_code.java:4. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
+      "affects": [
+        {
+          "ref": "crypto-component-da6018e707fb"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-2",
+      "id": "QUANTUM-RSA-2",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found RSA usage at test_samples/vulnerable_code.java:14. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
+      "affects": [
+        {
+          "ref": "crypto-component-0de94275636a"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-3",
+      "id": "QUANTUM-ECC-3",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found ECC usage at test_samples/vulnerable_code.java:21. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
+      "affects": [
+        {
+          "ref": "crypto-component-a6b307876c86"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-4",
+      "id": "QUANTUM-ECC-4",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found ECC usage at test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
+      "affects": [
+        {
+          "ref": "crypto-component-cef562d0522f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-5",
+      "id": "QUANTUM-RSA-5",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found RSA usage at test_samples/vulnerable_code.py:13. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
+      "affects": [
+        {
+          "ref": "crypto-component-f9cb7089543b"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-6",
+      "id": "QUANTUM-ECC-6",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found ECC usage at test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
+      "affects": [
+        {
+          "ref": "crypto-component-fcb1e6563de3"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-7",
+      "id": "QUANTUM-RSA-7",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found RSA usage at test_samples/vulnerable_code.py:6. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
+      "affects": [
+        {
+          "ref": "crypto-component-68f8e413cf40"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-8",
+      "id": "QUANTUM-RSA-8",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found RSA usage at test_samples/vulnerable_code.py:17. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
+      "affects": [
+        {
+          "ref": "crypto-component-68f8e413cf40"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-9",
+      "id": "QUANTUM-ECC-9",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found ECC usage at test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
+      "affects": [
+        {
+          "ref": "crypto-component-e06603f01ff5"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-10",
+      "id": "QUANTUM-ECC-10",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found ECC usage at test_samples/vulnerable_code.java:26. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
+      "affects": [
+        {
+          "ref": "crypto-component-20530a5c9b8f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-11",
+      "id": "QUANTUM-ECC-11",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found ECC usage at test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
+      "affects": [
+        {
+          "ref": "crypto-component-20530a5c9b8f"
+        }
+      ]
+    },
+    {
+      "bom-ref": "quantum-vuln-12",
+      "id": "QUANTUM-ECC-12",
+      "source": {
+        "name": "Quantum Crypto Scanner",
+        "url": "https://github.com/quantum-crypto-scanner"
+      },
+      "references": [
+        {
+          "id": "NIST-PQC",
+          "source": {
+            "name": "NIST Post-Quantum Cryptography",
+            "url": "https://csrc.nist.gov/projects/post-quantum-cryptography"
+          }
+        }
+      ],
+      "ratings": [
+        {
+          "source": {
+            "name": "Quantum Crypto Scanner"
+          },
+          "score": 9.0,
+          "severity": "critical",
+          "method": "CVSSv3",
+          "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+        }
+      ],
+      "cwes": [
+        327
+      ],
+      "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
+      "detail": "Found ECC usage at test_samples/vulnerable_code.py:26. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
+      "affects": [
+        {
+          "ref": "crypto-component-20530a5c9b8f"
+        }
+      ]
+    }
+  ],
+  "properties": [
+    {
+      "name": "cbom:total-crypto-assets",
+      "value": "19"
+    },
+    {
+      "name": "cbom:quantum-vulnerable-count",
+      "value": "12"
+    },
+    {
+      "name": "cbom:quantum-safe-percentage",
+      "value": "36.84"
+    },
+    {
+      "name": "cbom:languages-analyzed",
+      "value": "python,java"
+    },
+    {
+      "name": "cbom:scan-timestamp",
+      "value": "2025-07-28T18:10:08.346765+00:00"
+    }
+  ],
+  "quantumReadiness": {
+    "status": "high-risk",
+    "score": 31.6,
+    "assessment": "31.6% quantum-safe cryptography",
+    "total_crypto_assets": 19,
+    "quantum_vulnerable_assets": 12,
+    "weak_crypto_assets": 1,
+    "recommendation": "Urgent action required. Develop comprehensive migration plan"
+  },
+  "migrationRecommendations": [
+    {
+      "crypto_type": "RSA",
+      "priority": "HIGH",
+      "affected_files": 2,
+      "affected_instances": 5,
+      "nist_recommendation": {
+        "signatures": [
+          "ML-DSA (FIPS 204)",
+          "SLH-DSA (FIPS 205)"
+        ],
+        "key_encapsulation": [
+          "ML-KEM (FIPS 203)"
+        ],
+        "priority": "HIGH"
+      },
+      "migration_timeline": "Before 2030",
+      "estimated_effort": "LOW",
+      "specific_actions": [
+        "Replace RSA key generation in 2 file(s)",
+        "Implement ML-KEM for key encapsulation",
+        "Use ML-DSA for digital signatures",
+        "Consider hybrid RSA+PQC during transition"
+      ]
+    },
+    {
+      "crypto_type": "ECC",
+      "priority": "HIGH",
+      "affected_files": 2,
+      "affected_instances": 7,
+      "nist_recommendation": {
+        "signatures": [
+          "ML-DSA (FIPS 204)",
+          "SLH-DSA (FIPS 205)"
+        ],
+        "key_agreement": [
+          "ML-KEM (FIPS 203)"
+        ],
+        "priority": "HIGH"
+      },
+      "migration_timeline": "Before 2030",
+      "estimated_effort": "MEDIUM",
+      "specific_actions": [
+        "Replace ECC usage in 2 file(s)",
+        "Migrate ECDSA to ML-DSA",
+        "Replace ECDH with ML-KEM",
+        "Update certificate generation processes"
+      ]
+    }
+  ]
+}
