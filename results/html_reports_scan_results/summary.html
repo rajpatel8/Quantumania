@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary - Quantum Crypto Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📊 Scan Summary</h1>
+            <p class="subtitle">Statistical overview and analysis</p>
+        </header>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="crypto_assets.html">Crypto Assets</a></li>
+                <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
+                <li><a href="migration_plan.html">Migration Plan</a></li>
+                <li><a href="summary.html" class="active">Summary</a></li>
+                <li><a href="cbom.html">CBOM</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Crypto Types Distribution</h3>
+                    <canvas id="cryptoTypesChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Severity Levels</h3>
+                    <canvas id="severityChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Languages Analyzed</h3>
+                    <canvas id="languagesChart"></canvas>
+                </div>
+
+                <div class="chart-container">
+                    <h3>Quantum Readiness</h3>
+                    <canvas id="readinessChart"></canvas>
+                </div>
+            </div>
+
+            <div class="summary-stats">
+                <h2>Summary Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4>Total Crypto Assets</h4>
+                        <div class="stat-value">16</div>
+                    </div>
+                    <div class="stat-card vulnerable">
+                        <h4>Quantum Vulnerable</h4>
+                        <div class="stat-value">12</div>
+                    </div>
+                    <div class="stat-card safe">
+                        <h4>Quantum Safe</h4>
+                        <div class="stat-value">4</div>
+                    </div>
+                    <div class="stat-card">
+                        <h4>Readiness Score</h4>
+                        <div class="stat-value">31.6%</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Quantum Crypto Scanner | Generated on 2025-07-29 14:48:00</p>
+        </footer>
+    </div>
+
+    <script>
+        // Chart data
+        const cryptoTypesData = {"RSA": 4, "ECC": 5, "HASH": 5, "AES": 2};
+        const severityData = {"CRITICAL": 9, "HIGH": 5, "MEDIUM": 2};
+        const languagesData = {"java": 7, "python": 8, "unknown": 1};
+        const readinessScore = 31.6;
+
+        // Only create charts if data exists
+        if (Object.keys(cryptoTypesData).length > 0) {
+            new Chart(document.getElementById('cryptoTypesChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: Object.keys(cryptoTypesData),
+                    datasets: [{
+                        data: Object.values(cryptoTypesData),
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        if (Object.keys(severityData).length > 0) {
+            new Chart(document.getElementById('severityChart'), {
+                type: 'bar',
+                data: {
+                    labels: Object.keys(severityData),
+                    datasets: [{
+                        label: 'Count',
+                        data: Object.values(severityData),
+                        backgroundColor: ['#dc3545', '#fd7e14', '#ffc107', '#28a745']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        y: {
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+        }
+
+        if (Object.keys(languagesData).length > 0) {
+            new Chart(document.getElementById('languagesChart'), {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(languagesData),
+                    datasets: [{
+                        data: Object.values(languagesData),
+                        backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false
+                }
+            });
+        }
+
+        // Readiness Chart
+        new Chart(document.getElementById('readinessChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Quantum Ready', 'Needs Migration'],
+                datasets: [{
+                    data: [readinessScore, 100 - readinessScore],
+                    backgroundColor: ['#28a745', '#dc3545']
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

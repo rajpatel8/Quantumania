@@ -513,11 +513,207 @@ class QuantumCryptoScanner:
         else:
             return "Phased hybrid approach with gradual PQC adoption"
     
+    def _scan_file_for_crypto(self, file_path: Path) -> List[Dict[str, Any]]:
+        """
+        Backward compatibility method for Step 1 tests
+        Scans a single file using Step 2 enhanced analysis
+        """
+        try:
+            # Use enhanced analyzer if available, otherwise fallback
+            if STEP2_AVAILABLE and self.enhanced_analyzer:
+                # Determine file language
+                language_map = {
+                    '.py': 'python',
+                    '.java': 'java',
+                    '.js': 'javascript',
+                    '.ts': 'typescript',
+                    '.go': 'go',
+                    '.cpp': 'cpp',
+                    '.c': 'c',
+                    '.cs': 'csharp'
+                }
+                
+                language = language_map.get(file_path.suffix, 'unknown')
+                if language == 'unknown':
+                    return []
+                
+                # Use enhanced analyzer
+                findings = self.enhanced_analyzer.analyze_file(file_path, language)
+            else:
+                # Fallback to basic pattern matching
+                findings = self._basic_file_scan(file_path)
+            
+            # Convert to Step 1 compatible format if needed
+            for finding in findings:
+                if 'severity' not in finding:
+                    finding['severity'] = self._get_severity(finding['crypto_type'], finding.get('pattern', ''))
+            
+            return findings
+            
+        except Exception as e:
+            print(f"⚠️ Error in file scan compatibility method: {e}")
+            return []
+    
+    def _identify_quantum_vulnerable(self, findings: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+        """
+        Backward compatibility method for Step 1 tests
+        Identifies quantum-vulnerable findings using Step 2 logic
+        """
+        quantum_vulnerable = []
+        
+        for finding in findings:
+            crypto_type = finding.get('crypto_type', '')
+            
+            if crypto_type in ['RSA', 'ECC', 'DH']:
+                vuln_finding = finding.copy()
+                vuln_finding.update({
+                    'quantum_risk': 'CRITICAL',
+                    'reason': f"{crypto_type} is vulnerable to Shor's Algorithm on quantum computers",
+                    'estimated_break_timeline': '2030-2035',
+                    'attack_method': "Shor's Algorithm",
+                    'nist_replacement': self._get_nist_replacement(crypto_type)
+                })
+                quantum_vulnerable.append(vuln_finding)
+                
+            elif crypto_type == 'HASH':
+                pattern = finding.get('pattern', '').upper()
+                if any(weak in pattern for weak in ['MD5', 'SHA1']):
+                    vuln_finding = finding.copy()
+                    vuln_finding.update({
+                        'quantum_risk': 'HIGH',
+                        'reason': f"Weak hash function vulnerable to Grover's Algorithm",
+                        'estimated_break_timeline': '2035-2040',
+                        'attack_method': "Grover's Algorithm",
+                        'nist_replacement': 'SHA-256 or SHA-3'
+                    })
+                    quantum_vulnerable.append(vuln_finding)
+        
+        return quantum_vulnerable
+    
+    def _basic_file_scan(self, file_path: Path) -> List[Dict[str, Any]]:
+        """
+        Basic file scanning for fallback mode
+        """
+        findings = []
+        
+        # Basic crypto patterns
+        crypto_patterns = {
+            'RSA': ['RSA.generate', 'generateKeyPair("RSA"', 'KeyPairGenerator.getInstance("RSA")', 'PKCS1_OAEP'],
+            'ECC': ['ECDSA', 'ec.generate_private_key', 'SECP256R1', 'KeyPairGenerator.getInstance("EC")'],
+            'HASH': ['hashlib.sha1', 'hashlib.md5', 'MessageDigest.getInstance("MD5")', 'MessageDigest.getInstance("SHA-1")']
+        }
+        
+        try:
+            with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                content = f.read()
+                lines = content.split('\n')
+                
+                for line_num, line in enumerate(lines, 1):
+                    for crypto_type, patterns in crypto_patterns.items():
+                        for pattern in patterns:
+                            if pattern in line:
+                                findings.append({
+                                    'file': str(file_path),
+                                    'line': line_num,
+                                    'line_content': line.strip(),
+                                    'crypto_type': crypto_type,
+                                    'pattern': pattern,
+                                    'analysis_method': 'basic_fallback',
+                                    'confidence': 0.6,
+                                    'severity': self._get_severity(crypto_type, pattern)
+                                })
+        except Exception as e:
+            print(f"⚠️ Error in basic file scan of {file_path}: {e}")
+            
+        return findings
+    
+    def _fallback_analysis(self, target_path: Path) -> Dict[str, Any]:
+        """
+        Fallback analysis when Step 2 components aren't available
+        Uses basic pattern matching similar to Step 1
+        """
+        results = {
+            "analysis_method": "fallback_basic",
+            "crypto_findings": [],
+            "files_analyzed": 0,
+            "languages_detected": []
+        }
+        
+        # Basic crypto patterns for fallback
+        crypto_patterns = {
+            'RSA': ['RSA.generate', 'generateKeyPair("RSA"', 'KeyPairGenerator.getInstance("RSA")', 'PKCS1_OAEP'],
+            'ECC': ['ECDSA', 'ec.generate_private_key', 'SECP256R1', 'KeyPairGenerator.getInstance("EC")'],
+            'HASH': ['hashlib.sha1', 'hashlib.md5', 'MessageDigest.getInstance("MD5")', 'MessageDigest.getInstance("SHA-1")'],
+            'AES': ['AES.new', 'KeyGenerator.getInstance("AES")']
+        }
+        
+        # Scan supported file types
+        supported_extensions = {'.py': 'python', '.java': 'java', '.js': 'javascript', '.ts': 'typescript', '.go': 'go', '.cpp': 'cpp', '.c': 'c', '.cs': 'csharp'}
+        
+        for file_path in target_path.rglob('*'):
+            if file_path.is_file() and file_path.suffix in supported_extensions:
+                results["files_analyzed"] += 1
+                language = supported_extensions[file_path.suffix]
+                if language not in results["languages_detected"]:
+                    results["languages_detected"].append(language)
+                
+                try:
+                    with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+                        content = f.read()
+                        lines = content.split('\n')
+                        
+                        for line_num, line in enumerate(lines, 1):
+                            for crypto_type, patterns in crypto_patterns.items():
+                                for pattern in patterns:
+                                    if pattern in line:
+                                        results["crypto_findings"].append({
+                                            'file': str(file_path),
+                                            'line': line_num,
+                                            'line_content': line.strip(),
+                                            'crypto_type': crypto_type,
+                                            'pattern': pattern,
+                                            'analysis_method': 'fallback_basic',
+                                            'confidence': 0.6,
+                                            'severity': self._get_severity(crypto_type, pattern),
+                                            'language': language
+                                        })
+                except Exception as e:
+                    print(f"⚠️ Error scanning {file_path}: {e}")
+        
+        return results
+    
+    def _generate_basic_cbom(self, scan_results: Dict[str, Any]) -> Dict[str, Any]:
+        """
+        Generate basic CBOM when Step 2 components aren't available
+        """
+        return {
+            "bomFormat": "CycloneDX",
+            "specVersion": "1.4",
+            "serialNumber": f"urn:uuid:{uuid.uuid4()}",
+            "version": 1,
+            "metadata": {
+                "timestamp": datetime.now(timezone.utc).isoformat(),
+                "tools": [{"name": "quantum-crypto-scanner", "version": "0.2.0"}],
+                "component": {"type": "application", "name": "scanned-project"}
+            },
+            "components": [],
+            "vulnerabilities": [],
+            "quantumReadiness": {
+                "status": "unknown",
+                "score": 0,
+                "assessment": "Basic scan - upgrade to Step 2 for full CBOM"
+            },
+            "migrationRecommendations": []
+        }
+
     def cleanup(self):
         """Clean up temporary files and directories"""
         if self.temp_dir and self.temp_dir.exists():
-            shutil.rmtree(self.temp_dir)
-            print(f"🧹 Cleaned up temp directory: {self.temp_dir}")
+            try:
+                shutil.rmtree(self.temp_dir)
+                print(f"🧹 Cleaned up temp directory: {self.temp_dir}")
+            except Exception as e:
+                print(f"⚠️ Error cleaning up temp directory: {e}")
 
 
 # Enhanced CLI Interface for Step 2

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vulnerabilities - Quantum Crypto Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>⚠️ Quantum Vulnerabilities</h1>
+            <p class="subtitle">Security vulnerabilities and quantum threats</p>
+        </header>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="crypto_assets.html">Crypto Assets</a></li>
+                <li><a href="vulnerabilities.html" class="active">Vulnerabilities</a></li>
+                <li><a href="migration_plan.html">Migration Plan</a></li>
+                <li><a href="summary.html">Summary</a></li>
+                <li><a href="cbom.html">CBOM</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="vulnerabilities-overview">
+                <h2>Vulnerability Overview</h2>
+                <div class="overview-stats">
+                    <div class="stat-item critical">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Total Vulnerabilities</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vulnerabilities-table-container">
+                <h2>Detected Vulnerabilities</h2>
+                <table class="vulnerabilities-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Vulnerability ID</th>
+                            <th>Severity</th>
+                            <th>Score</th>
+                            <th>Description</th>
+                            <th>Details</th>
+                            <th>Recommendation</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr>
+                <td>1</td>
+                <td><strong>QUANTUM-RSA-1</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found RSA usage at test_samples/vulnerable_code.java:4. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation</td>
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                <td><strong>QUANTUM-RSA-2</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found RSA usage at test_samples/vulnerable_code.java:14. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation</td>
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                <td><strong>QUANTUM-ECC-3</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found ECC usage at test_samples/vulnerable_code.java:21. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach</td>
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                <td><strong>QUANTUM-ECC-4</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found ECC usage at test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach</td>
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                <td><strong>QUANTUM-RSA-5</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found RSA usage at test_samples/vulnerable_code.py:13. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation</td>
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                <td><strong>QUANTUM-ECC-6</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found ECC usage at test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach</td>
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                <td><strong>QUANTUM-RSA-7</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found RSA usage at test_samples/vulnerable_code.py:6. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation</td>
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                <td><strong>QUANTUM-RSA-8</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found RSA usage at test_samples/vulnerable_code.py:17. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation</td>
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                <td><strong>QUANTUM-ECC-9</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found ECC usage at test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach</td>
+            </tr>
+        
+            <tr>
+                <td>10</td>
+                <td><strong>QUANTUM-ECC-10</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found ECC usage at test_samples/vulnerable_code.java:26. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach</td>
+            </tr>
+        
+            <tr>
+                <td>11</td>
+                <td><strong>QUANTUM-ECC-11</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found ECC usage at test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach</td>
+            </tr>
+        
+            <tr>
+                <td>12</td>
+                <td><strong>QUANTUM-ECC-12</strong></td>
+                <td><span class="severity severity-critical">Critical</span></td>
+                <td>9.0</td>
+                <td>ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm</td>
+                <td class="detail-cell">Found ECC usage at test_samples/vulnerable_code.py:26. This algorithm will be broken by sufficiently powerful quantum computers.</td>
+                <td class="recommendation-cell">Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach</td>
+            </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Quantum Crypto Scanner | Generated on 2025-07-29 14:46:56</p>
+        </footer>
+    </div>
+</body>
+</html>

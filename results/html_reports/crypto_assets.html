@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Assets - Quantum Crypto Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🔐 Cryptographic Assets</h1>
+            <p class="subtitle">Detailed analysis of cryptographic components</p>
+        </header>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="crypto_assets.html" class="active">Crypto Assets</a></li>
+                <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
+                <li><a href="migration_plan.html">Migration Plan</a></li>
+                <li><a href="summary.html">Summary</a></li>
+                <li><a href="cbom.html">CBOM</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="assets-overview">
+                <h2>Assets Overview</h2>
+                <div class="overview-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">16</span>
+                        <span class="stat-label">Total Assets</span>
+                    </div>
+                    <div class="stat-item vulnerable">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Quantum Vulnerable</span>
+                    </div>
+                    <div class="stat-item safe">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">Quantum Safe</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="assets-table-container">
+                <h2>Cryptographic Components</h2>
+                <table class="assets-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Component Name</th>
+                            <th>Crypto Type</th>
+                            <th>Pattern</th>
+                            <th>Language</th>
+                            <th>Confidence</th>
+                            <th>Severity</th>
+                            <th>Quantum Vulnerable</th>
+                            <th>Risk Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+            <tr class="vulnerable">
+                <td>1</td>
+                <td>RSA-java.security.KeyPairGenerator</td>
+                <td><span class="crypto-type">RSA</span></td>
+                <td><code>java.security.KeyPairGenerator</code></td>
+                <td>java</td>
+                <td>1.0</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>2</td>
+                <td>RSA-KeyPairGenerator.getInstance("RSA")</td>
+                <td><span class="crypto-type">RSA</span></td>
+                <td><code>KeyPairGenerator.getInstance("RSA")</code></td>
+                <td>java</td>
+                <td>0.9</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>3</td>
+                <td>ECC-KeyPairGenerator.getInstance("EC")</td>
+                <td><span class="crypto-type">ECC</span></td>
+                <td><code>KeyPairGenerator.getInstance("EC")</code></td>
+                <td>java</td>
+                <td>0.9</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>4</td>
+                <td>ECC-Signature.getInstance("SHA256withECDSA")</td>
+                <td><span class="crypto-type">ECC</span></td>
+                <td><code>Signature.getInstance("SHA256withECDSA")</code></td>
+                <td>java</td>
+                <td>0.9</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="safe">
+                <td>5</td>
+                <td>HASH-MessageDigest.getInstance("SHA-1")</td>
+                <td><span class="crypto-type">HASH</span></td>
+                <td><code>MessageDigest.getInstance("SHA-1")</code></td>
+                <td>java</td>
+                <td>0.8</td>
+                <td><span class="severity severity-high">HIGH</span></td>
+                <td><span class="quantum-status safe">False</span></td>
+                <td><span class="risk-level risk-low">LOW</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>6</td>
+                <td>HASH-MessageDigest.getInstance("MD5")</td>
+                <td><span class="crypto-type">HASH</span></td>
+                <td><code>MessageDigest.getInstance("MD5")</code></td>
+                <td>java</td>
+                <td>0.8</td>
+                <td><span class="severity severity-high">HIGH</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-medium">MEDIUM</span></td>
+            </tr>
+        
+            <tr class="safe">
+                <td>7</td>
+                <td>AES-KeyGenerator.getInstance("AES")</td>
+                <td><span class="crypto-type">AES</span></td>
+                <td><code>KeyGenerator.getInstance("AES")</code></td>
+                <td>java</td>
+                <td>0.8</td>
+                <td><span class="severity severity-medium">MEDIUM</span></td>
+                <td><span class="quantum-status safe">False</span></td>
+                <td><span class="risk-level risk-low">LOW</span></td>
+            </tr>
+        
+            <tr class="safe">
+                <td>8</td>
+                <td>HASH-hashlib</td>
+                <td><span class="crypto-type">HASH</span></td>
+                <td><code>hashlib</code></td>
+                <td>python</td>
+                <td>0.9</td>
+                <td><span class="severity severity-high">HIGH</span></td>
+                <td><span class="quantum-status safe">False</span></td>
+                <td><span class="risk-level risk-low">LOW</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>9</td>
+                <td>RSA-RSA.generate</td>
+                <td><span class="crypto-type">RSA</span></td>
+                <td><code>RSA.generate</code></td>
+                <td>python</td>
+                <td>0.9</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>10</td>
+                <td>ECC-ec.generate_private_key</td>
+                <td><span class="crypto-type">ECC</span></td>
+                <td><code>ec.generate_private_key</code></td>
+                <td>python</td>
+                <td>0.9</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>11</td>
+                <td>HASH-hashlib.sha1</td>
+                <td><span class="crypto-type">HASH</span></td>
+                <td><code>hashlib.sha1</code></td>
+                <td>python</td>
+                <td>0.8</td>
+                <td><span class="severity severity-high">HIGH</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-medium">MEDIUM</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>12</td>
+                <td>HASH-hashlib.md5</td>
+                <td><span class="crypto-type">HASH</span></td>
+                <td><code>hashlib.md5</code></td>
+                <td>python</td>
+                <td>0.8</td>
+                <td><span class="severity severity-high">HIGH</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-medium">MEDIUM</span></td>
+            </tr>
+        
+            <tr class="safe">
+                <td>13</td>
+                <td>AES-AES.new</td>
+                <td><span class="crypto-type">AES</span></td>
+                <td><code>AES.new</code></td>
+                <td>python</td>
+                <td>0.8</td>
+                <td><span class="severity severity-medium">MEDIUM</span></td>
+                <td><span class="quantum-status safe">False</span></td>
+                <td><span class="risk-level risk-low">LOW</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>14</td>
+                <td>RSA-PKCS1_OAEP</td>
+                <td><span class="crypto-type">RSA</span></td>
+                <td><code>PKCS1_OAEP</code></td>
+                <td>python</td>
+                <td>0.7</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>15</td>
+                <td>ECC-SECP256R1</td>
+                <td><span class="crypto-type">ECC</span></td>
+                <td><code>SECP256R1</code></td>
+                <td>python</td>
+                <td>0.7</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+            <tr class="vulnerable">
+                <td>16</td>
+                <td>ECC-ECDSA</td>
+                <td><span class="crypto-type">ECC</span></td>
+                <td><code>ECDSA</code></td>
+                <td>unknown</td>
+                <td>0.6</td>
+                <td><span class="severity severity-critical">CRITICAL</span></td>
+                <td><span class="quantum-status vulnerable">True</span></td>
+                <td><span class="risk-level risk-critical">CRITICAL</span></td>
+            </tr>
+        
+                    </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Quantum Crypto Scanner | Generated on 2025-07-29 14:46:56</p>
+        </footer>
+    </div>
+</body>
+</html>

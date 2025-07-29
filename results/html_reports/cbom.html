@@ -1,4 +1,43 @@
-{
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBOM - Quantum Crypto Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>📋 Cryptographic Bill of Materials (CBOM)</h1>
+            <p class="subtitle">Complete CBOM in CycloneDX format</p>
+        </header>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="crypto_assets.html">Crypto Assets</a></li>
+                <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
+                <li><a href="migration_plan.html">Migration Plan</a></li>
+                <li><a href="summary.html">Summary</a></li>
+                <li><a href="cbom.html" class="active">CBOM</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="cbom-info">
+                <h2>About CBOM</h2>
+                <p>A Cryptographic Bill of Materials (CBOM) provides a comprehensive inventory of cryptographic assets and their quantum vulnerability status. This CBOM follows the CycloneDX standard for software bill of materials.</p>
+                
+                <div class="cbom-actions">
+                    <button onclick="downloadCBOM()" class="btn btn-primary">Download CBOM JSON</button>
+                    <button onclick="copyCBOM()" class="btn btn-secondary">Copy to Clipboard</button>
+                </div>
+            </div>
+
+            <div class="cbom-content">
+                <h2>CBOM Content</h2>
+                <pre id="cbom-json" class="cbom-json">{
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
   "serialNumber": "urn:uuid:2262e6b0-c6c5-4cf7-a20f-564c2d285022",
@@ -1426,4 +1465,35 @@
       ]
     }
   ]
-}
+}</pre>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Quantum Crypto Scanner | Generated on 2025-07-29 14:46:56</p>
+        </footer>
+    </div>
+
+    <script>
+        function downloadCBOM() {
+            const cbomContent = document.getElementById('cbom-json').textContent;
+            const blob = new Blob([cbomContent], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'cbom.json';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+        }
+
+        function copyCBOM() {
+            const cbomContent = document.getElementById('cbom-json').textContent;
+            navigator.clipboard.writeText(cbomContent).then(() => {
+                alert('CBOM copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>

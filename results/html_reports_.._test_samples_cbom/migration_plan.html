@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Migration Plan - Quantum Crypto Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>🚀 Post-Quantum Migration Plan</h1>
+            <p class="subtitle">Roadmap to quantum-safe cryptography</p>
+        </header>
+
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="crypto_assets.html">Crypto Assets</a></li>
+                <li><a href="vulnerabilities.html">Vulnerabilities</a></li>
+                <li><a href="migration_plan.html" class="active">Migration Plan</a></li>
+                <li><a href="summary.html">Summary</a></li>
+                <li><a href="cbom.html">CBOM</a></li>
+            </ul>
+        </nav>
+
+        <main class="main-content">
+            <div class="migration-overview">
+                <h2>Migration Overview</h2>
+                <p>This section provides a comprehensive plan for migrating from quantum-vulnerable cryptographic algorithms to post-quantum cryptography (PQC) standards.</p>
+                
+                <div class="overview-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">2</span>
+                        <span class="stat-label">Migration Tasks</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="migration-recommendations">
+                <h2>Migration Recommendations</h2>
+                
+            <div class="migration-card priority-high">
+                <div class="migration-header">
+                    <h3>RSA Migration</h3>
+                    <span class="priority-badge priority-high">HIGH Priority</span>
+                </div>
+                <div class="migration-content">
+                    <div class="migration-stats">
+                        <div class="stat">
+                            <span class="stat-label">Affected Files:</span>
+                            <span class="stat-value">2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Instances:</span>
+                            <span class="stat-value">5</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Timeline:</span>
+                            <span class="stat-value">Before 2030</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Effort:</span>
+                            <span class="stat-value">LOW</span>
+                        </div>
+                    </div>
+                    
+                    <div class="nist-recommendations">
+                        <h4>NIST Recommendations</h4>
+                        <p><strong>Signatures:</strong> ML-DSA (FIPS 204), SLH-DSA (FIPS 205)</p>
+                        <p><strong>Key Encapsulation:</strong> ML-KEM (FIPS 203)</p>
+                    </div>
+                    
+                    <div class="action-items">
+                        <h4>Specific Actions</h4>
+                        <ul><li>Replace RSA key generation in 2 file(s)</li><li>Implement ML-KEM for key encapsulation</li><li>Use ML-DSA for digital signatures</li><li>Consider hybrid RSA+PQC during transition</li></ul>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="migration-card priority-high">
+                <div class="migration-header">
+                    <h3>ECC Migration</h3>
+                    <span class="priority-badge priority-high">HIGH Priority</span>
+                </div>
+                <div class="migration-content">
+                    <div class="migration-stats">
+                        <div class="stat">
+                            <span class="stat-label">Affected Files:</span>
+                            <span class="stat-value">2</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Instances:</span>
+                            <span class="stat-value">7</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Timeline:</span>
+                            <span class="stat-value">Before 2030</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Effort:</span>
+                            <span class="stat-value">MEDIUM</span>
+                        </div>
+                    </div>
+                    
+                    <div class="nist-recommendations">
+                        <h4>NIST Recommendations</h4>
+                        <p><strong>Signatures:</strong> ML-DSA (FIPS 204), SLH-DSA (FIPS 205)</p>
+                        <p><strong>Key Encapsulation:</strong> Not specified</p>
+                    </div>
+                    
+                    <div class="action-items">
+                        <h4>Specific Actions</h4>
+                        <ul><li>Replace ECC usage in 2 file(s)</li><li>Migrate ECDSA to ML-DSA</li><li>Replace ECDH with ML-KEM</li><li>Update certificate generation processes</li></ul>
+                    </div>
+                </div>
+            </div>
+        
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 Quantum Crypto Scanner | Generated on 2025-07-29 14:48:00</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+
+🛡️  QUANTUM CRYPTOGRAPHY VULNERABILITY SCAN REPORT
+============================================================
+
+📊 SCAN SUMMARY:
+• Target: ../test_samples
+• Files Scanned: 2
+• Crypto Findings: 19
+• Quantum Vulnerable: 15
+
+🚨 RISK BREAKDOWN:
+• Critical Risk: 12
+• High Risk: 3
+• Medium Risk: 0
+• Low Risk: 0
+
+📋 QUANTUM-VULNERABLE FINDINGS:
+
+• ../test_samples/vulnerable_code.java:4
+  Algorithm: RSA
+  Risk: CRITICAL
+  Timeline: 2030-2035
+  Code: import java.security.KeyPairGenerator;...
+
+• ../test_samples/vulnerable_code.java:14
+  Algorithm: RSA
+  Risk: CRITICAL
+  Timeline: 2030-2035
+  Code: KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");...
+
+• ../test_samples/vulnerable_code.java:21
+  Algorithm: ECC
+  Risk: CRITICAL
+  Timeline: 2030-2035
+  Code: KeyPairGenerator keyGen = KeyPairGenerator.getInstance("EC");...
+
+• ../test_samples/vulnerable_code.java:28
+  Algorithm: ECC
+  Risk: CRITICAL
+  Timeline: 2030-2035
+  Code: Signature signature = Signature.getInstance("SHA256withECDSA");...
+
+• ../test_samples/vulnerable_code.java:42
+  Algorithm: HASH
+  Risk: HIGH
+  Timeline: 2035-2040
+  Code: MessageDigest md = MessageDigest.getInstance("MD5");...
+
+• ../test_samples/vulnerable_code.py:13
+  Algorithm: RSA
+  Risk: CRITICAL
+  Timeline: 2030-2035
+  Code: key = RSA.generate(2048)...
+
+• ../test_samples/vulnerable_code.py:22
+  Algorithm: ECC
+  Risk: CRITICAL
+  Timeline: 2030-2035
+  Code: private_key = ec.generate_private_key(ec.SECP256R1())...
+
+• ../test_samples/vulnerable_code.py:31
+  Algorithm: HASH
+  Risk: HIGH
+  Timeline: 2035-2040
+  Code: return hashlib.sha1(data.encode()).hexdigest()...
+
+• ../test_samples/vulnerable_code.py:34
+  Algorithm: HASH
+  Risk: HIGH
+  Timeline: 2035-2040
+  Code: return hashlib.md5(data.encode()).hexdigest()...
+
+• ../test_samples/vulnerable_code.py:6
+  Algorithm: RSA
+  Risk: CRITICAL
+  Timeline: 2030-2035
+  Code: from Crypto.Cipher import PKCS1_OAEP...

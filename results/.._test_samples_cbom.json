@@ -1,10 +1,10 @@
 {
   "bomFormat": "CycloneDX",
   "specVersion": "1.4",
-  "serialNumber": "urn:uuid:2262e6b0-c6c5-4cf7-a20f-564c2d285022",
+  "serialNumber": "urn:uuid:f408652a-face-4d13-bc9b-fb77ba9201e1",
   "version": 1,
   "metadata": {
-    "timestamp": "2025-07-29T18:32:38.586324+00:00",
+    "timestamp": "2025-07-29T18:23:04.440646+00:00",
     "tools": [
       {
         "vendor": "Quantum Crypto Scanner",
@@ -45,7 +45,7 @@
   "components": [
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-154459fc-196b-4bc1-b595-9d40f7348aef",
+      "bom-ref": "crypto-0de1d711-0b28-448f-b494-7d71c9b88442",
       "name": "RSA-java.security.KeyPairGenerator",
       "version": "unknown",
       "description": "RSA cryptographic usage",
@@ -93,7 +93,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-17b9c14b-19d1-41e6-b552-33b2fb326ea2",
+      "bom-ref": "crypto-3267acbd-172a-4ff4-9039-2c542b3c800f",
       "name": "RSA-KeyPairGenerator.getInstance(\"RSA\")",
       "version": "unknown",
       "description": "RSA cryptographic usage",
@@ -141,7 +141,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-6df64390-55ed-492b-a830-6000900df9fe",
+      "bom-ref": "crypto-28a39826-8df3-4673-b27b-5bcba9f96f92",
       "name": "ECC-KeyPairGenerator.getInstance(\"EC\")",
       "version": "unknown",
       "description": "ECC cryptographic usage",
@@ -189,7 +189,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-71852288-1206-4be7-8a8f-433e75c55748",
+      "bom-ref": "crypto-aa459158-06c3-4fab-aa97-29397ad2bc0e",
       "name": "ECC-Signature.getInstance(\"SHA256withECDSA\")",
       "version": "unknown",
       "description": "ECC cryptographic usage",
@@ -237,7 +237,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-38cbdd49-aee8-4c8b-a394-766d707dc6b4",
+      "bom-ref": "crypto-b801a5e6-4221-47cd-8c5e-dfbc661b141a",
       "name": "HASH-MessageDigest.getInstance(\"SHA-1\")",
       "version": "unknown",
       "description": "HASH cryptographic usage",
@@ -285,7 +285,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-9c66f4f1-be7b-4dac-bb1c-bcf0eb1c6109",
+      "bom-ref": "crypto-65641401-e15e-46f2-b80e-6c36aff7b30e",
       "name": "HASH-MessageDigest.getInstance(\"MD5\")",
       "version": "unknown",
       "description": "HASH cryptographic usage",
@@ -333,7 +333,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-832a6825-93d4-49fd-8ac0-661144dfb72a",
+      "bom-ref": "crypto-7353bdc5-dd96-4f26-9a78-166bbb4c77db",
       "name": "AES-KeyGenerator.getInstance(\"AES\")",
       "version": "unknown",
       "description": "AES cryptographic usage",
@@ -381,7 +381,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-449c303f-2881-47ce-ad21-4f4d3c01bc51",
+      "bom-ref": "crypto-f41f6d03-eb3b-424b-8992-b82c3bd4d531",
       "name": "HASH-hashlib",
       "version": "unknown",
       "description": "HASH cryptographic usage",
@@ -429,7 +429,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-fdde49e1-d85b-4c63-aa5c-c05ed8f6cdd3",
+      "bom-ref": "crypto-3548b7cc-a87f-4b22-ad27-fdf0a1ed2cd1",
       "name": "RSA-RSA.generate",
       "version": "unknown",
       "description": "RSA cryptographic usage",
@@ -477,7 +477,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-786776ba-ca92-4cd9-ba93-761c420986da",
+      "bom-ref": "crypto-b0107df8-299d-408a-84de-30db6c24dcf9",
       "name": "ECC-ec.generate_private_key",
       "version": "unknown",
       "description": "ECC cryptographic usage",
@@ -525,7 +525,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-cac2fbec-1fa0-4fcf-8af7-259a732fe4ac",
+      "bom-ref": "crypto-9784f59f-34ae-4194-9eb5-417d78ec66e9",
       "name": "HASH-hashlib.sha1",
       "version": "unknown",
       "description": "HASH cryptographic usage",
@@ -573,7 +573,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-2ceaab0e-3737-42b0-9946-623a34e19b15",
+      "bom-ref": "crypto-1bcd5854-5451-46f8-90d3-ba5001abab63",
       "name": "HASH-hashlib.md5",
       "version": "unknown",
       "description": "HASH cryptographic usage",
@@ -621,7 +621,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-5a2fa293-bf32-4f0a-80af-423086a604c1",
+      "bom-ref": "crypto-cb10f7a0-59e0-4bb9-b493-a87319679c3a",
       "name": "AES-AES.new",
       "version": "unknown",
       "description": "AES cryptographic usage",
@@ -669,7 +669,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-a75031fc-6b69-468a-9e0b-de27a2520ef6",
+      "bom-ref": "crypto-47991a5e-4f45-4d96-9ceb-c5c37261dfea",
       "name": "RSA-PKCS1_OAEP",
       "version": "unknown",
       "description": "RSA cryptographic usage",
@@ -717,7 +717,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-11213b38-9ec7-4003-b76e-03a0a4e7f5f3",
+      "bom-ref": "crypto-42b16a15-7379-42b3-831b-55bd85d7f179",
       "name": "ECC-SECP256R1",
       "version": "unknown",
       "description": "ECC cryptographic usage",
@@ -765,7 +765,7 @@
     },
     {
       "type": "cryptographic-asset",
-      "bom-ref": "crypto-03413dfc-eabb-4ee3-aabd-893a79e521a8",
+      "bom-ref": "crypto-e68c6464-bb51-44cd-bbcc-4e06ff7ddd94",
       "name": "ECC-ECDSA",
       "version": "unknown",
       "description": "ECC cryptographic usage",
@@ -815,7 +815,7 @@
   "services": [],
   "dependencies": [
     {
-      "ref": "file-20f286a4",
+      "ref": "file-96e069a6",
       "dependsOn": [
         "crypto-component-da6018e707fb",
         "crypto-component-0de94275636a",
@@ -829,7 +829,7 @@
       ]
     },
     {
-      "ref": "file-27c7b7fe",
+      "ref": "file-6fc2e100",
       "dependsOn": [
         "crypto-component-802cb5a36d1b",
         "crypto-component-f9cb7089543b",
@@ -907,7 +907,7 @@
         327
       ],
       "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found RSA usage at test_samples/vulnerable_code.java:4. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found RSA usage at ../test_samples/vulnerable_code.java:4. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
       "affects": [
         {
@@ -946,7 +946,7 @@
         327
       ],
       "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found RSA usage at test_samples/vulnerable_code.java:14. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found RSA usage at ../test_samples/vulnerable_code.java:14. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
       "affects": [
         {
@@ -985,7 +985,7 @@
         327
       ],
       "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found ECC usage at test_samples/vulnerable_code.java:21. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found ECC usage at ../test_samples/vulnerable_code.java:21. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
       "affects": [
         {
@@ -1024,7 +1024,7 @@
         327
       ],
       "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found ECC usage at test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found ECC usage at ../test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
       "affects": [
         {
@@ -1063,7 +1063,7 @@
         327
       ],
       "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found RSA usage at test_samples/vulnerable_code.py:13. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found RSA usage at ../test_samples/vulnerable_code.py:13. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
       "affects": [
         {
@@ -1102,7 +1102,7 @@
         327
       ],
       "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found ECC usage at test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found ECC usage at ../test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
       "affects": [
         {
@@ -1141,7 +1141,7 @@
         327
       ],
       "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found RSA usage at test_samples/vulnerable_code.py:6. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found RSA usage at ../test_samples/vulnerable_code.py:6. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
       "affects": [
         {
@@ -1180,7 +1180,7 @@
         327
       ],
       "description": "RSA cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found RSA usage at test_samples/vulnerable_code.py:17. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found RSA usage at ../test_samples/vulnerable_code.py:17. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Migrate to ML-DSA (Dilithium) for digital signatures or ML-KEM (Kyber) for key encapsulation",
       "affects": [
         {
@@ -1219,7 +1219,7 @@
         327
       ],
       "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found ECC usage at test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found ECC usage at ../test_samples/vulnerable_code.py:22. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
       "affects": [
         {
@@ -1258,7 +1258,7 @@
         327
       ],
       "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found ECC usage at test_samples/vulnerable_code.java:26. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found ECC usage at ../test_samples/vulnerable_code.java:26. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
       "affects": [
         {
@@ -1297,7 +1297,7 @@
         327
       ],
       "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found ECC usage at test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found ECC usage at ../test_samples/vulnerable_code.java:28. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
       "affects": [
         {
@@ -1336,7 +1336,7 @@
         327
       ],
       "description": "ECC cryptographic algorithm vulnerable to quantum attacks via Shor's algorithm",
-      "detail": "Found ECC usage at test_samples/vulnerable_code.py:26. This algorithm will be broken by sufficiently powerful quantum computers.",
+      "detail": "Found ECC usage at ../test_samples/vulnerable_code.py:26. This algorithm will be broken by sufficiently powerful quantum computers.",
       "recommendation": "Replace with ML-DSA (Dilithium) for signatures or consider hybrid classical+PQC approach",
       "affects": [
         {
@@ -1364,7 +1364,7 @@
     },
     {
       "name": "cbom:scan-timestamp",
-      "value": "2025-07-29T18:32:38.586728+00:00"
+      "value": "2025-07-29T18:23:04.441019+00:00"
     }
   ],
   "quantumReadiness": {

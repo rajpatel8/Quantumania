@@ -1,0 +1,104 @@
+
+🛡️  QUANTUM CRYPTOGRAPHY VULNERABILITY SCAN REPORT - ENHANCED
+================================================================================
+
+📊 SCAN SUMMARY:
+• Target: ../test_samples
+• Scanner Version: 2.0
+• Analysis Method: Enhanced Multi Engine
+• Files Scanned: 2
+• Languages: python, java
+• Crypto Findings: 19
+• Detection Confidence: 79.5%
+
+🚨 QUANTUM RISK ASSESSMENT:
+• Quantum Vulnerable: 15
+• Readiness Score: 21.1/100
+• Overall Status: High Risk
+
+📋 RISK BREAKDOWN:
+• Critical Risk: 12
+• High Risk: 3
+• Medium Risk: 0
+• Low Risk: 0
+
+🔄 MIGRATION PLAN:
+• Total Items: 15
+• Estimated Timeline: High priority - by 2030
+• Priority Groups: 3
+
+📋 CBOM SUMMARY:
+• Total Crypto Assets: 16
+• Quantum Vulnerabilities: 12
+• NIST Recommendations: 2
+
+🔍 TOP QUANTUM-VULNERABLE FINDINGS:
+
+1. 🔴 ../test_samples/vulnerable_code.java:4
+   Algorithm: RSA | Risk: CRITICAL | Timeline: 2030-2035
+   Attack: Shor's Algorithm | Confidence: 100.0%
+   NIST Replacement: ML-DSA (Dilithium) or ML-KEM (Kyber)
+   Code: import java.security.KeyPairGenerator;...
+
+2. 🔴 ../test_samples/vulnerable_code.java:14
+   Algorithm: RSA | Risk: CRITICAL | Timeline: 2030-2035
+   Attack: Shor's Algorithm | Confidence: 90.0%
+   NIST Replacement: ML-DSA (Dilithium) or ML-KEM (Kyber)
+   Code: KeyPairGenerator keyGen = KeyPairGenerator.getInstance("RSA");...
+
+3. 🔴 ../test_samples/vulnerable_code.java:21
+   Algorithm: ECC | Risk: CRITICAL | Timeline: 2030-2035
+   Attack: Shor's Algorithm | Confidence: 90.0%
+   NIST Replacement: ML-DSA (Dilithium) or SLH-DSA (SPHINCS+)
+   Code: KeyPairGenerator keyGen = KeyPairGenerator.getInstance("EC");...
+
+4. 🔴 ../test_samples/vulnerable_code.java:28
+   Algorithm: ECC | Risk: CRITICAL | Timeline: 2030-2035
+   Attack: Shor's Algorithm | Confidence: 90.0%
+   NIST Replacement: ML-DSA (Dilithium) or SLH-DSA (SPHINCS+)
+   Code: Signature signature = Signature.getInstance("SHA256withECDSA");...
+
+5. 🟡 ../test_samples/vulnerable_code.java:42
+   Algorithm: HASH | Risk: HIGH | Timeline: 2035-2040
+   Attack: Grover's Algorithm | Confidence: 80.0%
+   NIST Replacement: SHA-256 or SHA-3
+   Code: MessageDigest md = MessageDigest.getInstance("MD5");...
+
+6. 🔴 ../test_samples/vulnerable_code.py:13
+   Algorithm: RSA | Risk: CRITICAL | Timeline: 2030-2035
+   Attack: Shor's Algorithm | Confidence: 90.0%
+   NIST Replacement: ML-DSA (Dilithium) or ML-KEM (Kyber)
+   Code: key = RSA.generate(2048)...
+
+7. 🔴 ../test_samples/vulnerable_code.py:22
+   Algorithm: ECC | Risk: CRITICAL | Timeline: 2030-2035
+   Attack: Shor's Algorithm | Confidence: 90.0%
+   NIST Replacement: ML-DSA (Dilithium) or SLH-DSA (SPHINCS+)
+   Code: private_key = ec.generate_private_key(ec.SECP256R1())...
+
+8. 🟡 ../test_samples/vulnerable_code.py:31
+   Algorithm: HASH | Risk: HIGH | Timeline: 2035-2040
+   Attack: Grover's Algorithm | Confidence: 80.0%
+   NIST Replacement: SHA-256 or SHA-3
+   Code: return hashlib.sha1(data.encode()).hexdigest()...
+
+9. 🟡 ../test_samples/vulnerable_code.py:34
+   Algorithm: HASH | Risk: HIGH | Timeline: 2035-2040
+   Attack: Grover's Algorithm | Confidence: 80.0%
+   NIST Replacement: SHA-256 or SHA-3
+   Code: return hashlib.md5(data.encode()).hexdigest()...
+
+10. 🟡 ../test_samples/vulnerable_code.py:6
+   Algorithm: RSA | Risk: CRITICAL | Timeline: 2030-2035
+   Attack: Shor's Algorithm | Confidence: 70.0%
+   NIST Replacement: ML-DSA (Dilithium) or ML-KEM (Kyber)
+   Code: from Crypto.Cipher import PKCS1_OAEP...
+
+... and 5 more quantum-vulnerable findings
+
+
+📈 RECOMMENDATIONS:
+Urgent action required. Develop comprehensive migration plan
+
+🔗 CBOM Generated: 16 crypto components catalogued
+📄 Full CBOM available in JSON format with --format cbom
