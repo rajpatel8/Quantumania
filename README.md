@@ -31,7 +31,7 @@ This is **Step 1** of the development process. Currently implemented:
 
 ```bash
 # Clone the repository
-git clone <your-repo-url>
+git clone [this repo](https://github.com/rajpatel8/Quantumania)
 cd quantum-crypto-scanner
 
 # Create virtual environment
