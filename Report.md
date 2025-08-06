@@ -1,11 +1,11 @@
-# Quantum Cryptographic Scanner
+# Post-Quantum Cryptography Migration Assessment Tool
 ## Comprehensive Project Report
 
 ---
 
 ## Executive Summary
 
-The **Quantum Cryptographic Scanner** is a sophisticated cybersecurity tool designed to identify and assess quantum-vulnerable cryptographic implementations in software codebases. As quantum computing advances towards practical cryptographic attacks, this tool addresses the critical need for organizations to evaluate their cryptographic infrastructure's quantum readiness and plan migration strategies to post-quantum cryptography (PQC) standards.
+The **Post-Quantum Cryptography Migration Assessment Tool** is a sophisticated cybersecurity solution developed by a collaborative six-member team as part of COMP-8677 Advanced Topics in Computer Security coursework at the University of Windsor. This comprehensive tool is designed to identify and assess quantum-vulnerable cryptographic implementations in software codebases. As quantum computing advances towards practical cryptographic attacks, this tool addresses the critical need for organizations to evaluate their cryptographic infrastructure's quantum readiness and plan migration strategies to post-quantum cryptography (PQC) standards.
 
 ---
 
@@ -13,7 +13,7 @@ The **Quantum Cryptographic Scanner** is a sophisticated cybersecurity tool desi
 
 ### Purpose and Objectives
 
-The primary goal of this project is to develop an automated scanning tool that identifies quantum-vulnerable cryptographic algorithms (RSA, ECC, DH, weak hashes), assesses quantum risk levels and estimated break timelines, generates comprehensive security reports including CBOM (Cryptographic Bill of Materials), provides NIST-compliant migration recommendations for post-quantum cryptography, and supports multiple programming languages and output formats.
+The primary goal of this collaborative project is to develop an automated scanning tool that identifies quantum-vulnerable cryptographic algorithms (RSA, ECC, DH, weak hashes), assesses quantum risk levels and estimated break timelines, generates comprehensive security reports including CBOM (Cryptographic Bill of Materials), provides NIST-compliant migration recommendations for post-quantum cryptography, and supports multiple programming languages and output formats. This project serves as both a practical cybersecurity solution and a demonstration of advanced software engineering principles applied to emerging security challenges in the quantum computing era.
 
 ### Target Problem
 
@@ -406,9 +406,71 @@ Output format support includes JSON for machine-readable structured data, HTML f
 
 ---
 
+## Team Members and Contributions
+
+### Project Team Structure
+
+This comprehensive Post-Quantum Cryptography Migration Assessment Tool was developed by a collaborative team of six members from two sections of COMP-8677, demonstrating effective cross-section collaboration and diverse expertise integration.
+
+**Mon830 - Group PG14:**
+• Devang Parmar (110156230) - parmar1c@uwindsor.ca
+• Patel Shivam (110164737) - patel76b@uwindsor.ca  
+• Kaushal Patel (110182439) - patel7nb@uwindsor.ca
+• Aum Gediya (110175070) - gediyaa@uwindsor.ca
+
+**Mon1130 - Group PG15:**
+• Rajkumar Patel (110184076) - patel9qb@uwindsor.ca
+• Vansh Patel (110176043) - patel3hb@uwindsor.ca
+
+### Team Collaboration Model
+
+```mermaid
+graph TB
+    subgraph "Mon830 - Group PG14"
+        A[Devang Parmar<br/>Architecture & Design]
+        B[Patel Shivam<br/>Core Engine Development]
+        C[Kaushal Patel<br/>Pattern Recognition]
+        D[Aum Gediya<br/>Testing & Validation]
+    end
+    
+    subgraph "Mon1130 - Group PG15" 
+        E[Rajkumar Patel<br/>CBOM Generation]
+        F[Vansh Patel<br/>Report Generation]
+    end
+    
+    subgraph "Collaborative Areas"
+        G[Integration Testing]
+        H[Documentation]
+        I[Quality Assurance]
+        J[Performance Optimization]
+    end
+
+    A --> G
+    B --> G
+    E --> G
+    F --> H
+    C --> I
+    D --> I
+    A --> J
+    B --> J
+    E --> J
+    F --> J
+
+    style A fill:#e3f2fd
+    style B fill:#e8f5e8
+    style C fill:#fff3e0
+    style D fill:#f3e5f5
+    style E fill:#e1f5fe
+    style F fill:#fce4ec
+```
+
+The team successfully implemented a distributed development approach with clear role definitions while maintaining collaborative integration across all project components. Each team member contributed specialized expertise while ensuring seamless integration of all system components.
+
+---
+
 ## Conclusion
 
-The Quantum Cryptographic Scanner represents a critical tool in the cybersecurity landscape as organizations prepare for the quantum computing era. By providing comprehensive cryptographic assessment, NIST-compliant recommendations, and practical migration guidance, this project addresses fundamental security challenges facing the technology industry.
+The Post-Quantum Cryptography Migration Assessment Tool represents a critical advancement in cybersecurity tooling as organizations prepare for the quantum computing era. Through collaborative development by our six-member team across two COMP-8677 sections, this project addresses fundamental security challenges facing the technology industry by providing comprehensive cryptographic assessment, NIST-compliant recommendations, and practical migration guidance.
 
 ### Key Achievements
 
@@ -420,16 +482,18 @@ The extensible architecture supports future enhancements and integrations with e
 
 The project successfully addresses quantum readiness assessment requirements through comprehensive cryptographic analysis. Integration capabilities support existing development workflows and security processes. The tool provides immediate value for organizations beginning quantum transition planning while supporting long-term security strategy development.
 
-This implementation plays a vital role in helping organizations transition to quantum-safe cryptography, ensuring security resilience in the approaching quantum computing era. The comprehensive feature set and standards compliance position the tool as an essential component of modern cybersecurity infrastructure.
+This implementation successfully demonstrates the collective expertise of our team members and plays a vital role in helping organizations transition to quantum-safe cryptography, ensuring security resilience in the approaching quantum computing era. The comprehensive feature set and standards compliance position the tool as an essential component of modern cybersecurity infrastructure.
 
 ---
 
-**Project Team:** Quantum Cryptographic Security Research  
-**License:** MIT License  
+**Course:** COMP-8677 - Advanced Topics in Computer Security  
+**Institution:** University of Windsor  
+**Project Type:** Option 2 (Programming Project)  
+**Team Size:** 6 Members (2 Sections)  
+**Project License:** MIT License  
 **Repository:** https://github.com/rajpatel8/Quantumania  
-**Documentation:** Comprehensive README and inline documentation  
-**Support:** Active development and community contribution
+**Documentation:** Comprehensive technical documentation and user guides  
 
 ---
 
-*This report documents the completed implementation and capabilities of the Quantum Cryptographic Scanner as of August 2025.*
+*This report documents the completed implementation and capabilities of the Post-Quantum Cryptography Migration Assessment Tool developed as part of COMP-8677 coursework at University of Windsor, August 2025.*
